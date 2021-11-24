@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <canvas id="c" width=500 height=500 style="border: 1px solid black"></canvas>
+        <img style="display: none" id="i" src="./resources/1280px-Vliegenzwam_(Amanita_muscaria)._Locatie_De_Famberhorst._27-09-2020_(d.j.b.).jpg"/>
+        <script>
+            const c = /** @type {HTMLCanvasElement}*/ (document.querySelector("#c"));
+            const i = /** @type {HTMLImageElement} */ (document.querySelector("#i"));
+            i.addEventListener("load", () => {
+                const ctx = c.getContext('2d');
+                ctx.fillStyle = "red";
+                ctx.fill();
+                ctx.strokeText("0,0,100,100", 10,300)
+                ctx.drawImage(i,0,0,100,100, 10,300,70,80)
+
+                ctx.strokeText("300,300,100,100", 10,20)
+                ctx.drawImage(i,300,300,100,100, 10,20,70,80)
+
+                ctx.strokeText("300,300,150,150", 120,20)
+                ctx.drawImage(i,300,300,150,150, 120,20,70,80)
+
+                ctx.strokeText("300,400,100,100", 10,120)
+                ctx.drawImage(i,300,400,100,100, 10,120,70,80)
+
+                ctx.strokeText("300,400,150,150", 120,120)
+                ctx.drawImage(i,300,400,150,150, 120,120,70,80)
+
+                ctx.strokeText("none", 300, 20)
+                ctx.drawImage(i,300,20,70,80)
+            })
+        </script>
+    </body>
+</html>
