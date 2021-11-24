@@ -165,15 +165,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "deflate"
-version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c86f7e25f518f4b81808a2cf1c50996a61f5c2eb394b2393bd87f2a4780a432f"
-dependencies = [
- "adler32",
-]
-
-[[package]]
 name = "either"
 version = "1.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -423,7 +414,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "pathfinder_canvas_drawimage_repro"
+name = "pathfinder_canvas_drawimage_repo"
 version = "0.1.0"
 dependencies = [
  "gl",
@@ -436,7 +427,6 @@ dependencies = [
  "pathfinder_gl",
  "pathfinder_renderer",
  "pathfinder_resources",
- "pathfinder_webgl",
  "sdl2",
 ]
 
@@ -468,7 +458,7 @@ name = "pathfinder_export"
 version = "0.1.0"
 source = "git+https://github.com/servo/pathfinder.git?rev=6ce65b29dfc5074811eed66b1a90a813249e67c2#6ce65b29dfc5074811eed66b1a90a813249e67c2"
 dependencies = [
- "deflate 1.0.0",
+ "deflate",
  "pathfinder_color",
  "pathfinder_content",
  "pathfinder_geometry",
@@ -573,23 +563,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "pathfinder_webgl"
-version = "0.1.0"
-source = "git+https://github.com/servo/pathfinder.git?rev=6ce65b29dfc5074811eed66b1a90a813249e67c2#6ce65b29dfc5074811eed66b1a90a813249e67c2"
-dependencies = [
- "image",
- "js-sys",
- "log",
- "pathfinder_geometry",
- "pathfinder_gpu",
- "pathfinder_renderer",
- "pathfinder_resources",
- "pathfinder_simd",
- "wasm-bindgen",
- "web-sys",
-]
-
-[[package]]
 name = "pest"
 version = "2.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -606,7 +579,7 @@ checksum = "3c3287920cb847dee3de33d301c463fba14dda99db24214ddf93f83d3021f4c6"
 dependencies = [
  "bitflags",
  "crc32fast",
- "deflate 0.8.6",
+ "deflate",
  "miniz_oxide 0.3.7",
 ]
 

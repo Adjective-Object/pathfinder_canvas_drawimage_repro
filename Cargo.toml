@@ -1,5 +1,5 @@
 [package]
-name = "pathfinder_canvas_drawimage_repro"
+name = "pathfinder_canvas_drawimage_repo"
 version = "0.1.0"
 authors = ["Maxwell Huang-Hobbs <mhuan13@gmail.com>"]
 edition = "2018"
@@ -14,7 +14,6 @@ pathfinder_renderer = { git = "https://github.com/servo/pathfinder.git", rev = "
 pathfinder_export = { git = "https://github.com/servo/pathfinder.git", rev = "6ce65b29dfc5074811eed66b1a90a813249e67c2" }
 pathfinder_gl = { git = "https://github.com/servo/pathfinder.git", rev = "6ce65b29dfc5074811eed66b1a90a813249e67c2" }
 pathfinder_resources = { git = "https://github.com/servo/pathfinder.git", rev = "6ce65b29dfc5074811eed66b1a90a813249e67c2" }
-pathfinder_webgl = { git = "https://github.com/servo/pathfinder.git", rev = "6ce65b29dfc5074811eed66b1a90a813249e67c2" }
 sdl2 = "0.35.1"
 gl = "0.14.0"
 
